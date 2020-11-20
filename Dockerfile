@@ -1,4 +1,4 @@
-FROM sktdev/decapod-kustomize:v1
+FROM sktdev/decapod-kustomize:v2
 
 COPY src/ /
 
