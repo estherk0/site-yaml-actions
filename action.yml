@@ -8,8 +8,12 @@ inputs:
   targetDir:
     description: 'Target Directory'
     required: true
+  outputFile:
+    description: 'Output File'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.targetDir }}
+    - ${{ inputs.outputFile  }}
